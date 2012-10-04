@@ -24,7 +24,7 @@ class Valkyrie::Database
       cb.call(:table, [name, connection[name].count])
       transfer_table(name, db, &cb)
     end
-    puts "Migrating constraings:"
+    puts "Migrating constraints:"
     tables.each do |name|
       puts "#{name}"
       db.connection.write_extra_ddl(name, connection.read_extra_ddl(name))
