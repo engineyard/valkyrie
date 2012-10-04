@@ -53,9 +53,9 @@ module Sequel
       end
       self.create_table(name, :generator => generator)
       hash[:datetime_default].each do |row|
-        if database_type == :postgres
-          self["ALTER TABLE ? ALTER COLUMN ? SET DEFAULT CURRENT_TIMESTAMP", name, row[:column_name]].all
-        end
+        #if database_type == :postgres
+          #self["ALTER TABLE ? ALTER COLUMN ? SET DEFAULT CURRENT_TIMESTAMP", name, row[:column_name]].all
+        #end
       end
     end
 
