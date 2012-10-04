@@ -70,18 +70,18 @@ module Sequel
     end
 
     COLUMN_TYPE_STRING_TO_CLASS = {
-      "string" => String,
-      "integer" => Integer,
-      "fixnum" => Fixnum,
-      "bignum" => Bignum,
-      "float" => Float,
-      "numeric" => Numeric,
+      "string"     => String,
+      "integer"    => Integer,
+      "fixnum"     => Fixnum,
+      "bignum"     => Bignum,
+      "float"      => Float,
+      "numeric"    => Numeric,
       "bigdecimal" => BigDecimal,
-      "date" => Date,
-      "datetime" => DateTime,
-      "time" => Time,
-      "file" => File,
-      "trueclass" => TrueClass,
+      "date"       => Date,
+      "datetime"   => DateTime,
+      "time"       => Time,
+      "file"       => File,
+      "trueclass"  => TrueClass,
       "falseclass" => FalseClass
     }
 
